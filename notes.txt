@@ -1,0 +1,43 @@
+	Day 1
+JDK-java development kit - it is required, java complier
+Java (number) sometimes have lts, it means long time support 
+For example java 17 is lts
+
+jshell
+We can use "jshell" commnad in the termianl and by that we can basically perform simple math in the terminal.
+We can also use method print()
+Example of use:
+System.out.print(6); or System.out.print("Hello world"); or System.out.print('a');
+
+
+VSC manuals 
+How to compile java code in VSC:
+open terminal -> javac filename.extension 
+for example: javac Hello.java
+
+How to run already complied code in VSC:
+open terimal -> java classname
+for example: java Hello
+
+
+
+Theory:
+Java is platform independent because of JVM. JVM is required to make use of java files. JVM makes sure that code will work in system platform.
+
+Hardware <-> OS < JRE (java runtime environment, JVM inside JRE ) > JVM (translator) <-> Complier <-> Java code.
+Layres:
+(((JVM)JRE)JDK) (jdk is the biggest, outside layer). JDK is not required for example in our friends comp after finishing project, that's why java
+is called WORA which means "Write once, run anywhere".(if u have JVM and JRE (java runtime environment) installed.
+
+Java code needs to be converted to byte code by complier for JVM. 
+
+JVM need to be build for particular OS. JVM only understand Byte code. 
+
+Whether we have 1 java file or 39024 of files we have to tell JVM which file should be checked first, the file should've contain main method. 
+The execution will start with the first file, file that we specified and that file need to have main method, some kind of signature. 
+The signature (JVM is looking for):
+public static void main (String a[])
+
+After all this steps we will see our code output, our code working. 
+
+Java is an object oriented language. In short it means that everything should be an object and to create object we need a class
