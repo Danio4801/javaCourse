@@ -29,6 +29,8 @@ Layres:
 (((JVM)JRE)JDK) (jdk is the biggest, outside layer). JDK is not required for example in our friends comp after finishing project, that's why java
 is called WORA which means "Write once, run anywhere".(if u have JVM and JRE (java runtime environment) installed.
 
+!In short JDK contains JRE and JRE contains JVM
+
 Java code needs to be converted to byte code by complier for JVM. 
 
 JVM need to be build for particular OS. JVM only understand Byte code. 
@@ -41,3 +43,34 @@ public static void main (String a[])
 After all this steps we will see our code output, our code working. 
 
 Java is an object oriented language. In short it means that everything should be an object and to create object we need a class
+
+
+	Day 2
+We are basically doing processing on data, programming and fixing real life problems is just processing data.
+
+We (always) work with data but how to store data?
+We use database for storing data - database is permanent storage, it stays in the machine, but when we receive data from the user we want to process it. 
+How to do it? Well, we need to store data somewhere while processing and the "place" is called variable(s).
+We can imagine variable as a (storage) box, that box have certain type and unique name.
+Java is strongly typed language which means it demands the specification of data types.
+
+Data types:
+There are two data types: primitive and 
+1)Primitive 
+-Integer:
+byte(1 byte), short(2 bytes), int(4bytes), long(8bytes)(!l at the end required, example: long l = 324l;)   ( <-- different sizes (range(s) of int)
+-Float:
+double(8 bytes)(default value in java), float(4 bytes)
+It means if we DO NOT want to use default double but float we have to mention it,
+so the syntactic should like like this: float num = 5.6f; !with extra f at the end!;
+-Character:
+char(2 bytes)(java by default support the unicode, not the ascii)
+-Boolean:
+boolean(true or false)(java does not support 0 and 1, it's only true or false)
+2)
+
+
+How to calculate range of certain data type?
+example:
+byte (1 byte) so it's -2^7 to (2^7) - 1; -128 to 127
+
