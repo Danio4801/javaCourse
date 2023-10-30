@@ -45,7 +45,7 @@ After all this steps we will see our code output, our code working.
 Java is an object oriented language. In short it means that everything should be an object and to create object we need a class
 
 
-	Day 2
+	Day 2 
 We are basically doing processing on data, programming and fixing real life problems is just processing data.
 
 We (always) work with data but how to store data?
@@ -58,7 +58,7 @@ Data types:
 There are two data types: primitive and 
 1)Primitive 
 -Integer:
-byte(1 byte), short(2 bytes), int(4bytes), long(8bytes)(!l at the end required, example: long l = 324l;)   ( <-- different sizes (range(s) of int)
+byte(1 byte), short(2 bytes), int(4bytes), long(8bytes)(!L at the end required, example: long l = 324l;)   ( <-- different sizes (range(s) of int)
 -Float:
 double(8 bytes)(default value in java), float(4 bytes)
 It means if we DO NOT want to use default double but float we have to mention it,
@@ -67,10 +67,39 @@ so the syntactic should like like this: float num = 5.6f; !with extra f at the e
 char(2 bytes)(java by default support the unicode, not the ascii)
 -Boolean:
 boolean(true or false)(java does not support 0 and 1, it's only true or false)
+
 2)
 
 
 How to calculate range of certain data type?
 example:
 byte (1 byte) so it's -2^7 to (2^7) - 1; -128 to 127
+
+
+	Day 3
+What if we want to change the type of the variable?
+Well, we cant do that but we can assign value to the new variable with different type. 
+
+We can always assign the value to a bigger range variable, like byte b; int a; a = b; but not the other way around.
+
+But what if we really want to assign value of the int to a byte?
+We can perform such operation like this: b = (desired type) a; 
+This concept is called casting, in this case it is explicit casting.
+
+What will happen if we decide to assign value like 257 (type int) to the byte type?
+Math scheme:
+(value) mod (full range of chosen type) 
+257 % 256 (ans:1)
+
+What is conversion?
+In short conversion is an automatic casting.
+
+What is type promotion?
+Type promotion:
+byte a = 10;
+byte b = 30;
+int result = a*b;
+We are performing operation on byte; 10*30 will be out of byte range but since we assign the result of the operation 
+to int. Java auto promotes a and b to int.
+
 
