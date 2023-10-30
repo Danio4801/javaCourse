@@ -1,6 +1,6 @@
-class Variables
+public class Variables
 {
-    public static void main(String a[])
+    public static void main(String args[])
     {
         System.out.print(5 + 6);
 
@@ -20,10 +20,25 @@ class Variables
         //DATA TYPES
         float num3 = 5.6f;
         
-        long l = 43242423l; 
+        long l = 43242423L;  // the values are called literals beacuse they literally a values (stałą wartość przypisaną do zmiennej można nazwać literałem.)
         
         char c = 'k'; //char accept only a single character and we cant use the "", insted for single characters '' is required;
-        boolean b = true; // we dont use the "" because true or false is a keyword itself
+        boolean b = true; // we dont use the "" because true or false is a keyword itself 
 
+
+        //literals 
+        int num4 = 564; // we can use / play with DEC values
+        int num5 = 0b101; // we can use / play with BIN values but we have to remember about the 0b at the beginning 
+        int num6 = 0x7E; // we can use / play with HEX values but we have to remember about the 0h at the beginning 
+        int num7 = 100_000_000; //we can always use the _ just to not get confused with eg. multiple zeros in bank acc number
+
+        double num8 = 56;
+        double num9 = 12e10; // we can use epsilon
+        System.out.println(num9);
+
+
+        char a = 'a';
+        a += 1;
+        System.out.println(a); 
     }
 }
