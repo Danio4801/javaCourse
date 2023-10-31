@@ -103,3 +103,59 @@ We are performing operation on byte; 10*30 will be out of byte range but since w
 to int. Java auto promotes a and b to int.
 
 
+	Day 4
+Assignment operators:
+We can +, -, * and / variables . 
+If we want to get remainder we have to use % (mod operator). example 7%5 (ans:2)
+
+
+num1++; and ++num1; - the difference: 
+num1++; post - increment 
+++num1; pre - increment 
+This 2 operations works differently when we try to fetch the value.
+
+Example: 
+int num  7;
+int result = ++num;
+The incremented value is being assigned to the "result", the result is eight and num is equal to eight as well.
+
+int num  7;
+int result = num++; //fetch the value and then increment (2 statements)
+The result is seven and the num is equal to 8. 
+Why? First we fetch the value of num1 (seven), assign it to result (integer result is equal to seven),
+and then we increment the variable result so the num is equal to eight.
+
+
+Combing conditions - relational operators 
+less than ,greater than: <, >, 
+equal to: ==, 
+not equal: !=,
+true -> false : !,
+less than or equal to, greater than or equal to: <=, >=, 
+
+
+&& - and 
+|| - or
+! - not 
+
+
+Conditional statements: 
+If we want to utilise only some part of the code based of condition we can use:
+if -  instruction: it's important to note that if does not care what's inside the curly brackets, 
+if just wants to know is it true or false so we can even write smth like: if(true) and it's okay, will work.
+We do not have to use {} for 1 line instructions, example:
+if (true) 
+System.out.print("Hi");
+
+same truth applies with else (remember, else cannot be alone) 
+if (true) 
+System.out.print("Hi");
+else
+System.out.print("Bye");
+
+So if we have only one instruction after each condition the {} isn't  required for code to work. 
+
+
+
+
+
