@@ -157,5 +157,60 @@ So if we have only one instruction after each condition the {} isn't  required f
 
 
 
+	Day 5
+Question mark and colon in java (ternary operator):
+We have to use ? and : .
+int result = n%2 == 0?10:20; 
+Explanation: 
+n%2 == 0 might return true or false so we can put the question mark, we can ask is it true or false.
+If it is true we can execute the part after the question mark, if it is false code after colon will be executed.
+If true, the value of the result will be 10. If n%2 != then the value will be 20.
+ 
 
+Switch statement: 
+example:
+switch(passed value / value of the variable)
+{
+	case value (this value will be compared to passed value): //bunch on instruction 
+	case 2: //bunch on instruction 
+	case 3: //bunch on instruction 
+	case 4: //bunch on instruction 
+}
+If the passed value match with lets say case 2, code from case 3 and 4 will be also executed,
+because switch statement is like, "cool, the value matched, now i can carry on without checking again".
+We can prevent situation like this by using break.
+example:
+int num = 2;
+switch(num)
+{
+	case 2: 
+		//bunch on instructions
+	 	break;
+	case 3: 
+			//bunch on instructions
+	 		break;	
+	case 4: 
+			//bunch on instructions
+	 		break;	
+}
+After the match, the switch will break which will result in escaping from another and another case.
+
+Ok, cool, but what if the value is not equal to 2, 3 or 4?
+We can use "default case", example: 
+int num = 2;
+switch(num)
+{
+	case 2: 
+		//bunch on instruction
+	 	break;
+	case 3: 
+			//bunch on instructions
+	 		break;	
+	case 4: 
+			//bunch on instructions
+	 		break;
+	default: //will be executed if none of the above matches the num value
+			//bunch on instructions
+	 		break;			
+}
 
