@@ -214,3 +214,28 @@ switch(num)
 	 		break;			
 }
 
+	Day 6	
+We can use "+" to concatenate 2 things:
+example:
+int i = 0;
+System.out.println("Hi" + i);
+
+
+Loops - loops let us recreate the same thing multiple times
+Types of loops:
+while, do - while, for.
+(more about loops in the CS50 Week 1 C shorts notes in "Loops" section)
+
+OOP - object oriented programming:
+// Object - properties and behaviours 
+example: me, (as a human)
+properties - what I know 
+behaviours - what I do
+
+How to create an object?
+In order to create an object first we have to create a class.
+
+
+Technical info:
+JVM - creates object in java
+JVM needs a blueprint, a classfile. We have have to make the classfile.
