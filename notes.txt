@@ -68,7 +68,8 @@ char(2 bytes)(java by default support the unicode, not the ascii)
 -Boolean:
 boolean(true or false)(java does not support 0 and 1, it's only true or false)
 
-2)
+2)Special types:
+String - special type in java, combination of different characters
 
 
 How to calculate range of certain data type?
@@ -226,11 +227,13 @@ Types of loops:
 while, do - while, for.
 (more about loops in the CS50 Week 1 C shorts notes in "Loops" section)
 
-OOP - object oriented programming:
+OOP - object oriented programming (more in Demo code):
+Uncompleted notes:xs
 // Object - properties and behaviours 
+
 example: me, (as a human)
 properties - what I know 
-behaviours - what I do
+methods (behaviours) - what I do
 
 How to create an object?
 In order to create an object first we have to create a class.
@@ -238,4 +241,52 @@ In order to create an object first we have to create a class.
 
 Technical info:
 JVM - creates object in java
-JVM needs a blueprint, a classfile. We have have to make the classfile.
+JVM needs a blueprint, a classfile. We have to make the classfile.
+We are designing and JVM is just a manufacture, 
+just like Apple - designed in California, assembled in China. 
+
+	Day 7
+Method always has to return something!
+The moment the method sees return it will jump out of the method,
+it will not execute the other statement.
+
+
+We can have methods with the same name, the only requirement is different parameters(different name, value of parameters or type of parameters.
+This idea is called "method overloading".
+
+How does JVM memory works:
+Inside JVM memory: 
+last in - first out - this is called stack (memory)(stos)
+we also have heap (sterta) - open space
+Every method has it's own stack
+
+Array
+Once we declare size of the array we have to stick to it.
+
+example of array (can store up to 3 values)
+int num1[] = new int[4]; // size is fixed 
+all the values by default are 0 (in the array show above)
+ 
+Multidimensional arrays:
+example:
+int num[][] = new int[3][4];
+[number of arrays][number of spots inside each array]
+
+
+For each loop:
+example: 
+int numbers[] = {0, 1, 2};
+for(int i : numbers) //i - temp variable :(colon) collection of variables
+{
+System.out.println(x)
+}
+ChatGPT note:
+petla for each sluzy do iteracji przez elementy tablicy lub innej kolekcji w jezyku java.
+Jest bardzo wygodna i czytelna forma petli, ktora automatycznie przechodzi przez wszystkie elementy w kolekcji 
+bez koniecznosci recznego zarzadania indeksami:
+schemat:
+for(typ_elementu zmienna: kolekcja)
+{
+//kod ktory operuje na zmiennej 
+} 
+
