@@ -21,10 +21,10 @@ public class Demo
         //We created the object below   
         Calculator calc = new Calculator(); 
         //hey, i have calc class and i want to make object based on this "idea", based on Calcualtor class
-        // it is the referance variable
+        // calc - it is the referance variable
 
         // new Calculator();  - this is how to we create the object
-        // new Calculator();  - we want a new object of the design Calculator
+        // new Calculator();  - we wan  t a new object of the design Calculator
         // Calculator calc - we are assigning new object of the Calculator design of type Calculator called calc
 
 
@@ -33,6 +33,6 @@ public class Demo
         System.out.println("Result: " + result);
 
 
-
+     
     }
 }
