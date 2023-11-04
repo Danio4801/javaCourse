@@ -10,7 +10,7 @@ public class  arraysjava
         {
             System.out.println(x); //ChatGPT note:  Pętla for each automatycznie przechodzi przez elementy tablicy, więc x będzie wartością z tablicy, a nie indeksem.
         }
-
+        
         System.out.println("---------");
 
        
