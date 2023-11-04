@@ -19,12 +19,13 @@ public class randomInJava
                 System.out.println("");    
             }
 
-            //for tmrw
-            for(int x : numberOfArrays)
+            for(int x[] : multiArray) //we gettin array from array, thats why x have square brackets
             {
-
+                for(int m:x)
+                {
+                    System.out.print(m+" ");
+                }
+                System.out.println("");
             }
-
-  
     }
 }
