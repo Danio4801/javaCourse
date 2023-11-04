@@ -290,3 +290,29 @@ for(typ_elementu zmienna: kolekcja)
 //kod ktory operuje na zmiennej 
 } 
 
+
+	Day 8
+Inside array we can have different size of elements, its not fixed.
+This type of array is called jagged arrays.
+example:
+int nums = new int[3][]; //jagged array
+nums[0] = new int[3];//for the firs array we specify how many values we have 
+nums[0] = new int[4];
+nums[0] = new int[2];
+It looks like this (visualisation):
+BOX 1([0][3]):| place |place |place |
+BOX 2([1][4]):| place |place |place |place |
+BOX 3([2][2]):| place |place |
+
+Arrays drawbacks:
+- size is fixed
+- searching does consume a lot of time
+We can use collections instead (we'll talk about collections later)
+
+Exceptions are runtime errors (we'll talk about exceptions later) 
+nums.length - this way we can get the property, the info about array length of the array
+for each loop is called enhanced for loop
+
+
+Strings:
+
