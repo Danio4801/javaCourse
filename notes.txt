@@ -70,6 +70,7 @@ boolean(true or false)(java does not support 0 and 1, it's only true or false)
 
 2)Special types:
 String - special type in java, combination of different characters
+(more about strings in day 9 notes and code from day 9)
 
 
 How to calculate range of certain data type?
@@ -314,5 +315,69 @@ nums.length - this way we can get the property, the info about array length of t
 for each loop is called enhanced for loop
 
 
+	
+	Day 9
 Strings:
+String starts with capital letter which means its not a primitive type, it is basically a class.
 
+Strings as an objects behind the scene:
+String s1 = "L"; //example: address 101
+String s2 = "L"; //hmm, hey string constant pool. Do you have "L". Yes? Good, please make a reference, not an brand new object so we can save some memory.
+We have 1 object, 2 references.The address are the same.
+Inside the heap we have special area called: String constant pool. If we write something it's done, we cant change the data.
+example:
+s1 = s1 + "P";
+We are basically just changing the address from 101 to example 105, not the actual data, we are basically creating a new obejct.
+//Garbage collector will remove the garbage left, connected to the old address.
+So once we create an object we cannot change it.
+
+
+Immutable string 
+-something which cannot be changed
+-Strings by default are Immutable 
+
+Mutable string	
+-something which can be changed
+
+If we want to make/get/use mutable string we have to use:
+- String Buffer
+or
+- String Builder
+
+Both are similar with small differences and both are providing the way to create Mutable string	
+
+
+StringBuffer in order to be efficient give us buffer size, by default it is 16 bytes(16 characters capacity).
+Please note that capacity() and length() are to different things.
+
+
+The difference between String Builder and String Buffer:
+-String Buffer is thread safe while string builder is not.
+(more about it later)
+
+
+
+
+What is static?
+example:
+class Mobile
+{
+String brand;
+static String name; //we are making this name variable common to all the object 
+}
+
+class blablavl
+{
+obj1.name = "Phone"; //this change affect all objects because name is static 
+//or
+Mobile.name = "Cellphone";// we can simple instead of calling object call entire class
+}
+
+
+Static variables should be called with the class name.
+
+Static variables are shared by different objects.
+
+Technical note:
+In the JVM we have static variables separated from others variables.
+In non static methods we can use static variables.
