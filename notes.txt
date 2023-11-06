@@ -381,3 +381,70 @@ Static variables are shared by different objects.
 Technical note:
 In the JVM we have static variables separated from others variables.
 In non static methods we can use static variables.
+
+We use special block:
+example:
+static String name;
+static
+{
+	name = "Phone"; 
+}
+in order to give some default value to all objects in the class.
+
+Static block always goes first. 
+
+Two steps:
+1) class loads
+2)objects are instantiated 
+
+Class loads only once, in JVM we have special area called Class loader - this will have all loaded class. 
+
+If we don't call any object the static will not be called (constructor will not be called either). 
+
+
+But what if we want to call a class without creating any object?
+
+We can use a special syntax: Class.forName(<classname>);
+
+
+
+
+	Day 10
+
+Encapsulation is a part of OOP.
+What does the encapsulation means?
+Well we can think about it like a capsules. The capsules are closed, they keep the stuff safe, tight and nobody from the outside can used it.
+
+Not all the data are and should be directly accessible for everyone 
+
+
+Every time we make an instance variable we should make it private, no one should have access to it directly. 
+
+Java enterprise standard: 
+Proper names:
+examples:
+
+getters(when we want to get a value):
+getVariableName: getAge(){}
+
+setters(when we want to set a value):
+setVariableName: setName(){}
+
+We can right click in our IDE, choose:Source Action and quickly make Setters and Getters, we need them for all variables
+
+
+
+"this" keyword. 
+We use "this" keyword if we want the instance variable and local variable have the same age.
+
+Constructor is a special method, it has the same as a class name. Constructor never returns anything.
+Constructor looks like the method itself.
+Constructor name should be the same, like the class itself.
+The constructor is called even if we have not made the call, every time we create an object the constructor is called.
+
+If we want to assign some values in the begging, for every new object we have to use a constructor - it is a standard and we have to follow standards.
+
+What is the parameterised constructor and what is the difference? 
+It's called that because it will assign different (in comparison to default constructor ) parameters.
+
+If we don't create constructor java will make one for us. It will be blank but it will be there. 
